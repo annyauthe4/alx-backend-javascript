@@ -1,11 +1,10 @@
 import Currency from './3-currency.js';
 
+
 export default class Pricing {
-  _amount;
-  _currency;
   constructor(amount, currency) {
-    this.amount = amount;
-    this.currency = currency;
+    this._amount = amount;
+    this._currency = currency;
   }
 
   get amount() {
