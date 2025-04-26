@@ -49,3 +49,16 @@ function createEmployee(salary: number | string): Director | Teacher {
   }
   return new Director;
 }
+
+// Creating functions specific to employees - type predicate
+function isDirector(employee: DirectorInterface | TeacherInterface): employee is Director {
+  return (employee as Director).workDirectorTasks !== undefined;
+}
+
+function executeWork(employee: DirectorInterface | TeacherInterface): void {
+  if (isDirector(employee)) {
+    console.log(employee.workDirectorTasks());
+  } else {
+    console.log(employee.workTeacherTasks());
+  }
+}
