@@ -1,6 +1,15 @@
 <h1> NodeJS Basics </h1>
 NodeJS provides a medium to run JavaScript outside a browser.
 
+<h1>Setup of JSON package</h1>
+In order to test file against eslint:
+   configure package.json file
+   configure babel.config.js file
+   configure .eslintrc.js file
+   Then run npm install on the CLI
+   <i> To test file</i>: npx eslint filename
+
+
 <b>Using process in Node.js to Access Command Line Arguments and the Environment</b>
 Node.js provides the global process object to interact with the current Node process. It includes:
 
